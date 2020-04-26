@@ -1,4 +1,5 @@
 // https://eloquentjavascript.net/02_program_structure.html
+
 // Chessboard
 function chessBoard(size){
     let board = '';
@@ -18,4 +19,5 @@ function chessBoard(size){
     return board;
 }
 
+// tests:
 console.log(chessBoard(10));

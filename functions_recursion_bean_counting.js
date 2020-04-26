@@ -1,4 +1,5 @@
 // https://eloquentjavascript.net/03_functions.html
+
 // Recursion
 function isEven(number) {
     const absoluteNumber = Math.abs(number);
@@ -10,6 +11,7 @@ function isEven(number) {
       return isEven(absoluteNumber - 2);
     }
   }
+  // tests:
   console.log(isEven(50));
   console.log(isEven(75));
   console.log(isEven(-50));
@@ -24,4 +26,5 @@ function isEven(number) {
     }
     return counter;
   }
+  // tests:
   console.log(countChar("kakDASCDadsdbkkkdgfgkerlak", "f"));
