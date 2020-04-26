@@ -1,12 +1,16 @@
 function range(start, end, step = 1) {
   let range = [];
   if (start < end) {
-    if (step < 0) step = -step;
+    if (step < 0) {
+      return new Error('Not valid step value.\n It has to be number bigger than 0 for given start and end composition');
+    }
     for (let i = start; i <= end; i += step) {
      range.push(i);
     }
   } else if (start > end) {
-    if (step > 0) step = -step;
+    if (step > 0) {
+      return new Error('Not valid step value.\n It has to be number lower than 0 for given start and end composition');
+    };
     for (let i = start; i >= end; i += step) {
      range.push(i);
     }
