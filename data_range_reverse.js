@@ -2,7 +2,7 @@
 
 // The sum of a range
 function range(start, end, step = 1) {
-  let range = [];
+  const range = [];
   if (start < end) {
     if (step < 0) {
       return new Error('Not valid step value.\n It has to be number bigger than 0 for given start and end composition');
@@ -69,6 +69,6 @@ function reverseArrayInPlace(array){
 const firstTestArray = ["A", "B", "C"];
 console.log(reverseArray(firstTestArray));
 console.log(firstTestArray);
-let secondTestArray = [1, 2, 3, 4, 5];
+const secondTestArray = [1, 2, 3, 4, 5];
 console.log(reverseArrayInPlace(secondTestArray));
 console.log(secondTestArray);
